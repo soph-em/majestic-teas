@@ -20,7 +20,7 @@
 				></mask
 			><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSFullSelection0)" /></svg
 		>
-		<p class="text-xs">All</p>
+		<p class="text-xs">Select all</p>
 	</div>
 	<!-- tea equipment -->
 	<div title="tea making equipment" class="iconAndText">
