@@ -6,12 +6,14 @@
 
 <div class="flex flex-col items-center">
 	<section class="w-full flex flex-col items-center h-[500px] relative">
-		<div class="w-screen h-full">
+		<div class="w-full h-full">
 			<img class="h-full w-full -z-10 object-cover" alt="tea leaves" src={teaImg} />
 		</div>
 		<div class="absolute text-white flex flex-col items-center h-full justify-center">
-			<h1 class="text-5xl text-white">Majestic Tea</h1>
-			<h2 class="text-3xl text-white text-center pb-3">Your one-stop shop to all things tea</h2>
+			<h1 class="heroText text-5xl text-white">Majestic Tea</h1>
+			<h2 class="heroText text-3xl text-white text-center pb-3">
+				Your one-stop shop to all things tea
+			</h2>
 		</div>
 	</section>
 
@@ -24,27 +26,42 @@
 		<!-- <div class="flex gap-5 overflow-x-scroll py-8 px-5 snap-x snap-mandatory" /> -->
 		<OptionsSelector />
 		<div class="blogPosts">
-			<div class="post"><BlogPost /></div>
-
-			<div class="post"><BlogPost /></div>
-
-			<div class="post"><BlogPost /></div>
-
-			<div class="post"><BlogPost /></div>
-
-			<div class="post"><BlogPost /></div>
+			<a class="post" href="/BlogPost">
+				<div><BlogPost /></div>
+			</a>
+			<a class="post" href="/BlogPost">
+				<div><BlogPost /></div>
+			</a>
+			<a class="post" href="/BlogPost">
+				<div><BlogPost /></div>
+			</a>
+			<a class="post" href="/BlogPost">
+				<div><BlogPost /></div>
+			</a>
+			<a class="post" href="/BlogPost">
+				<div><BlogPost /></div>
+			</a>
 		</div>
 	</section>
 </div>
 
 <style>
+	.a {
+		justify-content: center;
+	}
+	.heroText {
+		text-shadow: 1px 1px 2px black;
+	}
 	.post {
 		display: flex;
 		flex-direction: column;
 		margin: 10px;
 		max-width: 50%;
-
+		cursor: pointer;
 		padding: none;
+	}
+	.post:hover {
+		color: grey;
 	}
 	.blogPosts {
 		display: flex;
